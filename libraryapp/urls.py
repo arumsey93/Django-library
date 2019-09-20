@@ -16,5 +16,5 @@ urlpatterns = [
     url(r'^logout/$', logout_user, name='logout'),
     url(r'^libraries$', library_list, name='libraries'),
     url(r'^library/form$', library_form, name='library_form'),
-    path('libraries/<int:library_id>/', library_details, name='libraries'),
+    path('libraries/<int:library_id>', library_details, name='library'),
 ]
